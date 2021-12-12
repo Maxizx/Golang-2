@@ -98,7 +98,7 @@ func ejer_12(n1, n2, n3, n4 int) {
 func ejer_13(n1, n2, n3, n4 int) {
 
 	var num = [...]int{n1, n2, n3, n4}
-	fmt.Print(num)
+	//fmt.Print(num)
 
 	numI := num[0] //Asignar variable al primer elemento
 	for _, numero := range num {
