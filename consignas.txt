@@ -1,0 +1,20 @@
+-Ejercicio 10
+Pedir al usuario que ingrese 10 numeros y almacenarlos en un array e imprimirlos
+
+-Ejercicio 11
+Pedir al usuario que ingrese 10 numeros y almacenarlos en un array. Luego decirle al usuario cual es el numero mas grande de los que ingreso
+
+-Ejercicio 12
+Pedir al usuario que ingrese 10 numeros y almacenarlos en un array. Luego decirle al usuario cual es el numero mas pequeño de los que ingreso
+
+-Ejercicio 13
+Pedir al usuario que ingrese 10 numeros y almacenarlos en un array, evitar que ingresen un numero que ya se encuentra en el array
+
+-Ejercicio 14
+Pedir al usuario que ingrese 10 numeros y almacenarlos en un array. Ordenarlos e imprimir el resultado.
+
+-Ejercicio 15
+Pedir al usuario que ingrese un numero indicando cuantos numeros va a cargar y generar un array de esa cantidad de posiciones.
+
+-Ejercicio 16
+Pedir al usuario que ingrese un numero indicando cuantos numeros va a cargar, generar un array de esa cantidad de posiciones y ordenarlos. Luego imprimir el resultado
