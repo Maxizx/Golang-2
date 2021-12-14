@@ -89,16 +89,16 @@ func ejer_12(num [10]int) {
 //func ejer_13(num [10]int) {
 func ejer_13() {
 
-	num := [4]int{1, 1, 2, 3}
+	num := [4]int{3, 1, 2, 2}
 
 	igual := 0
 
 	for i := 0; i < len(num); i++ {
-		if igual == num[i] {
+		if igual < num[i] {
 			igual = num[i]
 
 		}
 	}
 
-	fmt.Println("El numero más grande es el: ", igual)
+	fmt.Println("El numero que se repite es el: ", igual)
 }
