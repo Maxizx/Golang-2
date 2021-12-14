@@ -7,7 +7,7 @@ import (
 const NAME string = "Patito"
 
 func main() {
-	obtenerElMayor()
+	ejer_13()
 	//ba()
 }
 
@@ -36,13 +36,13 @@ func elegir(numeros [10]int) {
 	case 1:
 		ejer_10(numeros)
 	case 2:
-		//ejer_11(n1, n2, n3, n4)
+		ejer_11(numeros)
 	case 3:
-		//ejer_12(n1, n2, n3, n4)
+		ejer_12(numeros)
 	case 4:
-		//ejer_13(n1, n2, n3, n4)
+		//ejer_13(numeros)
 	default:
-		//fmt.Print("gracias")
+		fmt.Print("gracias")
 	}
 
 }
@@ -57,68 +57,48 @@ func ejer_10(valores [10]int) {
 	}
 }
 
-func ejer_11(n1, n2, n3, n4 int) {
+func ejer_11(valores [10]int) {
 
-	//for i := 0; i < 10; i++ {
-	//sum += i
-	//}
-	//var i int
-	var num = [...]int{n1, n2, n3, n4}
-	numM := num[0] //Asignar variable al primer elemento
-	for _, numero := range num {
-		if numero > numM {
-			numM = numero
-		}
-	}
-
-	fmt.Printf("El numero más grande es el %v", numM)
-
-}
-
-func ejer_12(n1, n2, n3, n4 int) {
-
-	//var num = [...]int{n1, n2, n3, n4}
-	//, n5, n6, n7, n8, n9, n0}
-
-	//for i := 0; i < 10; i++ {
-	//sum += i
-	//}
-	//var i int
-	var num = [...]int{n1, n2, n3, n4}
-	numM := num[0] //Asignar variable al primer elemento
-	for _, numero := range num {
-		if numero < numM {
-			numM = numero
-		}
-	}
-	fmt.Printf("El numero más chico es el %v", numM)
-
-}
-
-func ejer_13(n1, n2, n3, n4 int) {
-
-	var num = [...]int{n1, n2, n3, n4}
-	//fmt.Print(num)
-
-	numI := num[0] //Asignar variable al primer elemento
-	for _, numero := range num {
-		if numero != numI {
-			fmt.Print(numI)
-
-		}
-	}
-	//fmt.Printf("El numero repeditdo es %v", numI)
-}
-
-func obtenerElMayor() {
-	numeros := [5]int{0, 4, 7, 10, 2}
+	//numeros := [5]int{0, 4, 7, 10, 2}
 	mayor := 0
 
-	for i := 0; i < len(numeros); i++ {
-		if mayor < numeros[i] {
-			mayor = numeros[i]
+	for i := 0; i < len(valores); i++ {
+		if mayor < valores[i] {
+			mayor = valores[i]
 		}
 	}
 
-	fmt.Println(mayor)
+	fmt.Println("El numero más grande es el: ", mayor)
+
+}
+
+func ejer_12(num [10]int) {
+
+	menor := 0
+
+	for i := 0; i < len(num); i++ {
+		if menor < num[i] {
+			menor = num[i]
+		}
+	}
+
+	fmt.Println("El numero más grande es el: ", menor)
+
+}
+
+//func ejer_13(num [10]int) {
+func ejer_13() {
+
+	num := [4]int{1, 1, 2, 3}
+
+	igual := 0
+
+	for i := 0; i < len(num); i++ {
+		if igual == num[i] {
+			igual = num[i]
+
+		}
+	}
+
+	fmt.Println("El numero más grande es el: ", igual)
 }
