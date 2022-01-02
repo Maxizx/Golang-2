@@ -7,8 +7,8 @@ import (
 const NAME string = "Patito"
 
 func main() {
-	//foor()
-	ejer_13()
+	foor()
+	//ejer_13()
 	//ba()
 }
 
@@ -118,14 +118,18 @@ func foor() {
 	var num = [3]int{}
 	var igual, a int
 	//fmt.Scan(&num[0], &num[1], &num[2], &num[3], &num[4], &num[5])
-
-	for i := 0; i < len(num); i++ {
+	fmt.Scan(&num[0])
+	for i := 1; i < len(num); i++ {
 		fmt.Scan(&a)
 		if a == num[i] {
-			igual = num[i]
+			igual = a
 			break
+		}
+		if a != num[i] {
+			num[i] = a
 
 		}
+
 	}
 	fmt.Println("se repite", igual)
 	fmt.Println("su array es", num)
