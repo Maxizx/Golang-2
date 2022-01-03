@@ -119,14 +119,17 @@ func foor() {
 	var igual, a int
 	//fmt.Scan(&num[0], &num[1], &num[2], &num[3], &num[4], &num[5])
 	fmt.Scan(&num[0])
-	for i := 1; i < len(num); i++ {
+	for i := 1; i < 3; i++ {
 		fmt.Scan(&a)
-		if a == num[i] {
-			igual = a
-			break
-		}
+
 		if a != num[i] {
 			num[i] = a
+
+		}
+		for x := 0; a == num[x]; x++ {
+			if a == num[x] {
+				igual = a
+			}
 
 		}
 
