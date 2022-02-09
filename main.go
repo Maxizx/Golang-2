@@ -116,24 +116,44 @@ func foor() {
 	}*/
 
 	var num = [3]int{}
-	var igual, a int
+	var igual int
 	//fmt.Scan(&num[0], &num[1], &num[2], &num[3], &num[4], &num[5])
 	fmt.Scan(&num[0])
-	for i := 1; i < 3; i++ {
+	/*for i := 1; i < 2; i++ {
+
 		fmt.Scan(&a)
 
-		if a != num[i] {
-			num[i] = a
-
-		}
-		for x := 0; a == num[x]; x++ {
+		for x := i; a == num[x]; x++ {
 			if a == num[x] {
 				igual = a
 			}
 
+			if a != num[i] {
+				num[i] = a
+
+			}
+
 		}
 
+		//fmt.Println("num now", num)
+	}*/
+
+	for i := 1; i < 3; i++ {
+		fmt.Scan(&num[i])
+
 	}
+
+	for x, i := 3, 1; x < 0; x-- {
+		if num[i] == num[x] {
+			igual = num[i]
+		}
+		if num[i] != num[x] {
+			num[i] = num[i]
+
+		}
+		i++
+	}
+
 	fmt.Println("se repite", igual)
 	fmt.Println("su array es", num)
 }
